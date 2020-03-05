@@ -8,7 +8,7 @@ int partition (int arr[],int low,int high)
     {
         int i=-1;
 
-        int pivot = arr[6];
+        int pivot = arr[high];
     
         for(int j=0; j<high; j++)
         {
