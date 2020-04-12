@@ -46,7 +46,7 @@ int minRefills(int n, vector<int> x, int dist_with_full_tank)
 
 main()
 {
-/* int n = 0;
+ int n = 0;
 vector<int> x;
 int dist_with_full_tank = 0;
 
@@ -59,48 +59,11 @@ for(int i = 0; i < n; i++)
    cin>>temp;
    x.push_back(temp);
 }
-//cour<<"Give Mileage per full tank:";    
+cout<<"Give Mileage per full tank:";    
 cin>>dist_with_full_tank;
 
-//cout<<"Number of refilling required:";
-cout<<minRefills(n, x, dist_with_full_tank)<<'\n'; */
-  int n;
-  int f=0,c=0,h=0,z=0,k=0;
-  cin>>n;
-  int arr[3][n];
-  int t; 
-  for (int i = 1; i <= n; i++)
-  {
-     cin>>t;
-     if (t==1){
-        f++;
-       
-        arr[t][f]=i;
-     }
-     else if (t==2){
-         c++;
+cout<<"Number of refilling required:";
+cout<<minRefills(n, x, dist_with_full_tank)<<'\n'; 
+  
      
-         arr[t][c]=i;
-     }
-     else if (t==3){
-         h++;
-        
-         arr[t][h]=i;
-     }
-   
-  }   
- 
-     for (int i = 1; i <=7-4; i++)
-     {
-        for (int j = 1; j <=3; j++)
-        {
-           if(arr[j][i]!=0) k++;
-            if (k==3) z++;
-
-        }
-        
-     }
-     
-cout<<z<<endl;
- 
 }
